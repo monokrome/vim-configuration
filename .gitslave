@@ -2,3 +2,4 @@
 "https://github.com/kchmck/vim-coffee-script.git" "coffee"
 "https://github.com/monokrome/vim-user-bundle" "user"
 "https://github.com/scrooloose/nerdtree.git" "nerdtree"
+"https://github.com/jnwhiteh/vim-golang" "golang"
