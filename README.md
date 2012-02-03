@@ -5,7 +5,7 @@ do this with the following commands **after installing
 pathogen**:
 
     cd ~/.vim/
-    git clone https://github.com/monokrome/vim-bundles bundles
+    git clone https://github.com/monokrome/vim-bundles bundle
 
 After this is done, make sure that you have installed a piece of
 software called [git slave](http://gitslave.sourceforge.net/).
