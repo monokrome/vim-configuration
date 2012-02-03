@@ -1,6 +1,6 @@
 This project is a collection of the vim bundles that I like to
 use. It is meant to be used after pathogen is installed, and
-cloned directly into ~/.vim with the name 'bundles'. You can
+cloned directly into ~/.vim with the name 'bundle'. You can
 do this with the following commands **after installing
 pathogen**:
 
