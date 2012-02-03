@@ -1,1 +1,2 @@
 "https://github.com/tpope/vim-fugitive" "fugitive"
+"https://github.com/kchmck/vim-coffee-script.git" "coffee"
