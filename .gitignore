@@ -3,8 +3,5 @@
 !.gitignore
 !.gitslave
 
-/fugitive/
-/coffee/
-/user/
-/nerdtree/
-/golang/
+/*/
+
