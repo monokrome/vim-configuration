@@ -1,7 +1,7 @@
+"https://github.com/tpope/vim-pathogen.git" "pathogen"
 "https://github.com/tpope/vim-fugitive" "bundle/fugitive"
 "https://github.com/kchmck/vim-coffee-script.git" "bundle/coffee"
 "https://github.com/monokrome/vim-user-bundle" "bundle/user"
 "https://github.com/scrooloose/nerdtree.git" "bundle/nerdtree"
 "https://github.com/jnwhiteh/vim-golang" "bundle/golang"
 "https://github.com/monokrome/Vimpy" "bundle/Vimpy"
-"https://github.com/tpope/vim-pathogen.git" "pathogen"
