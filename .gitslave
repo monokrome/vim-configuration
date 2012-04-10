@@ -3,3 +3,4 @@
 "https://github.com/monokrome/vim-user-bundle" "user"
 "https://github.com/scrooloose/nerdtree.git" "nerdtree"
 "https://github.com/jnwhiteh/vim-golang" "golang"
+"https://github.com/monokrome/Vimpy" "Vimpy"
