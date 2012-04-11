@@ -5,3 +5,4 @@
 "https://github.com/scrooloose/nerdtree.git" "bundle/nerdtree"
 "https://github.com/jnwhiteh/vim-golang" "bundle/golang"
 "https://github.com/monokrome/Vimpy" "bundle/Vimpy"
+"https://github.com/sjl/gundo.vim.git" "bundle/gundo"
