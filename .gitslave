@@ -6,3 +6,4 @@
 "https://github.com/jnwhiteh/vim-golang" "bundle/golang"
 "https://github.com/monokrome/Vimpy" "bundle/Vimpy"
 "https://github.com/sjl/gundo.vim.git" "bundle/gundo"
+"https://github.com/tpope/vim-surround" "bundle/surround"
