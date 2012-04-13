@@ -8,3 +8,4 @@
 "https://github.com/sjl/gundo.vim.git" "bundle/gundo"
 "https://github.com/tpope/vim-surround" "bundle/surround"
 "https://github.com/Townk/vim-autoclose" "bundle/AutoClose"
+"https://github.com/vim-scripts/L9.git" "bundle/L9"
