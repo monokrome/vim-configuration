@@ -12,3 +12,4 @@
 "https://github.com/ervandew/supertab" "bundle/supertab"
 "https://github.com/Raimondi/delimitMate.git" "bundle/delimitMate"
 "https://github.com/kevinw/pyflakes-vim.git" "bundle/pyflakes-vim"
+"https://github.com/vim-scripts/TaskList.vim.git" "bundle/TaskList"
