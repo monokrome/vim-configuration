@@ -13,3 +13,4 @@ bundle/*/
 /bundle/vim-autocomplpop/
 /bundle/supertab/
 /bundle/delimitMate/
+/bundle/pyflakes-vim/
