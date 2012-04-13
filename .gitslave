@@ -10,3 +10,4 @@
 "https://github.com/Townk/vim-autoclose" "bundle/AutoClose"
 "https://github.com/vim-scripts/L9.git" "bundle/L9"
 "https://github.com/vim-scripts/AutoComplPop.git" "bundle/vim-autocomplpop"
+"https://github.com/ervandew/supertab" "bundle/supertab"
