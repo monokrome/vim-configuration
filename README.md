@@ -18,7 +18,6 @@ You can easily install git slave in OS X if you have homebrew:
 
 Now, you can have git slave populate the bundles:
 
-    cd bundle
     gits populate
 
 If you are interested in creating a repository like this, it is
