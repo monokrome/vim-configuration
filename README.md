@@ -4,8 +4,8 @@ cloned directly into ~/.vim with the name 'bundle'. You can
 do this with the following commands **after installing
 pathogen**:
 
-    cd ~/.vim/
-    git clone https://github.com/monokrome/vim-bundles bundle
+    cd ~/
+    git clone https://github.com/monokrome/vim-config .vim
 
 After this is done, make sure that you have installed a piece of
 software called [git slave](http://gitslave.sourceforge.net/).
