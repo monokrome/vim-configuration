@@ -17,3 +17,4 @@ bundle/*/
 /bundle/TaskList/
 /bundle/VimPdb/
 /bundle/gist/
+/bundle/clang_complete/
