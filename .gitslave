@@ -15,3 +15,4 @@
 "https://github.com/vim-scripts/TaskList.vim.git" "bundle/TaskList"
 "https://github.com/mattn/gist-vim.git" "bundle/gist"
 "https://github.com/Rip-Rip/clang_complete.git" "bundle/clang_complete"
+"https://github.com/msanders/snipmate.vim.git" "bundle/snipmate"
