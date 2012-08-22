@@ -20,3 +20,4 @@ bundle/*/
 /bundle/clang_complete/
 /bundle/snipmate/
 /bundle/VimClojure/
+/bundle/vim-slime/

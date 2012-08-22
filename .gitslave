@@ -16,3 +16,4 @@
 "https://github.com/Rip-Rip/clang_complete.git" "bundle/clang_complete"
 "https://github.com/msanders/snipmate.vim.git" "bundle/snipmate"
 "git://github.com/vim-scripts/VimClojure.git" "bundle/VimClojure"
+"https://github.com/jpalardy/vim-slime" "bundle/vim-slime"
