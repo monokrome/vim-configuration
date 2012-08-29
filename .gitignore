@@ -21,3 +21,4 @@ bundle/*/
 /bundle/snipmate/
 /bundle/VimClojure/
 /bundle/vim-slime/
+/bundle/vim-less/
