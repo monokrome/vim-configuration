@@ -17,3 +17,4 @@
 "git://github.com/vim-scripts/VimClojure.git" "bundle/VimClojure"
 "https://github.com/jpalardy/vim-slime" "bundle/vim-slime"
 "https://github.com/groenewege/vim-less" "bundle/vim-less"
+"git://github.com/altercation/vim-colors-solarized.git" "bundle/vim-colors-solarized"

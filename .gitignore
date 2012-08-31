@@ -25,3 +25,4 @@ bundle/*/
 /bundle/VimClojure/
 /bundle/vim-slime/
 /bundle/vim-less/
+/bundle/vim-colors-solarized/
