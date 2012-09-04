@@ -18,3 +18,4 @@
 "https://github.com/jpalardy/vim-slime" "bundle/vim-slime"
 "https://github.com/groenewege/vim-less" "bundle/vim-less"
 "git://github.com/altercation/vim-colors-solarized.git" "bundle/vim-colors-solarized"
+"git://github.com/Lokaltog/vim-powerline.git" "bundle/vim-powerline"
