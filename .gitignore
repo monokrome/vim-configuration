@@ -27,3 +27,4 @@ bundle/*/
 /bundle/vim-less/
 /bundle/vim-colors-solarized/
 /bundle/vim-powerline/
+/bundle/ctrlp.vim/
