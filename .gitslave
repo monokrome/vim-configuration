@@ -21,3 +21,4 @@
 "git://github.com/Lokaltog/vim-powerline.git" "bundle/vim-powerline"
 "https://github.com/kien/ctrlp.vim.git" "bundle/ctrlp.vim"
 "git://github.com/vim-scripts/closetag.vim.git" "bundle/closetag.vim"
+"git://github.com/scrooloose/syntastic.git" "bundle/syntastic"

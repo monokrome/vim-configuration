@@ -29,3 +29,4 @@ bundle/*/
 /bundle/vim-powerline/
 /bundle/ctrlp.vim/
 /bundle/closetag.vim/
+/bundle/syntastic/
