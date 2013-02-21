@@ -23,3 +23,4 @@
 "git://github.com/vim-scripts/closetag.vim.git" "bundle/closetag.vim"
 "git://github.com/scrooloose/syntastic.git" "bundle/syntastic"
 "git://github.com/tpope/vim-repeat.git" "bundle/vim-repeat"
+"git://github.com/tpope/vim-unimpaired.git" "bundle/vim-unimpaired"
