@@ -22,3 +22,4 @@
 "https://github.com/kien/ctrlp.vim.git" "bundle/ctrlp.vim"
 "git://github.com/vim-scripts/closetag.vim.git" "bundle/closetag.vim"
 "git://github.com/scrooloose/syntastic.git" "bundle/syntastic"
+"git://github.com/tpope/vim-repeat.git" "bundle/vim-repeat"

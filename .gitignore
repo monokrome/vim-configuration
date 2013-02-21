@@ -30,3 +30,4 @@ bundle/*/
 /bundle/ctrlp.vim/
 /bundle/closetag.vim/
 /bundle/syntastic/
+/bundle/vim-repeat/
