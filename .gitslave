@@ -25,3 +25,4 @@
 "git://github.com/tpope/vim-repeat.git" "bundle/vim-repeat"
 "git://github.com/tpope/vim-unimpaired.git" "bundle/vim-unimpaired"
 "git://github.com/smerrill/vagrant-vim.git" "bundle/vagrant"
+"git://github.com/tpope/vim-obsession.git" "bundle/vim-obsession"
