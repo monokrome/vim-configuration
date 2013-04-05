@@ -24,3 +24,4 @@
 "git://github.com/scrooloose/syntastic.git" "bundle/syntastic"
 "git://github.com/tpope/vim-repeat.git" "bundle/vim-repeat"
 "git://github.com/tpope/vim-unimpaired.git" "bundle/vim-unimpaired"
+"git://github.com/smerrill/vagrant-vim.git" "bundle/vagrant"

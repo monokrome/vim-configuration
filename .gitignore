@@ -32,3 +32,4 @@ bundle/*/
 /bundle/syntastic/
 /bundle/vim-repeat/
 /bundle/vim-unimpaired/
+/bundle/vagrant/
