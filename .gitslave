@@ -36,4 +36,3 @@
 "git://github.com/tpope/vim-classpath.git" "bundle/vim-classpath"
 "git://github.com/timgreen/vim-tagbar.git" "bundle/vim-tagbar"
 "git://github.com/vim-scripts/Better-CSS-Syntax-for-Vim.git" "bundle/Better-CSS-Syntax-for-Vim"
-"git://github.com/vim-scripts/UltiSnips.git" "bundle/UltiSnips"
