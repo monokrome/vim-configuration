@@ -30,3 +30,4 @@
 "git://github.com/tpope/vim-sensible.git" "bundle/vim-sensible"
 "git://github.com/vim-scripts/MatchTag.git" "bundle/MatchTag"
 "git://github.com/voithos/vim-python-matchit.git" "bundle/vim-python-matchit"
+"git://github.com/tpope/vim-fireplace.git" "bundle/vim-fireplace"
