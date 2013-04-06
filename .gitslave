@@ -32,3 +32,4 @@
 "git://github.com/voithos/vim-python-matchit.git" "bundle/vim-python-matchit"
 "git://github.com/tpope/vim-fireplace.git" "bundle/vim-fireplace"
 "git://github.com/tpope/vim-characterize.git" "bundle/vim-characterize"
+"git://github.com/tpope/heroku-remote.git" "bundle/heroku-remote"
