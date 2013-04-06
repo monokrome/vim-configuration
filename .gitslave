@@ -34,3 +34,4 @@
 "git://github.com/tpope/vim-characterize.git" "bundle/vim-characterize"
 "git://github.com/tpope/heroku-remote.git" "bundle/heroku-remote"
 "git://github.com/tpope/vim-classpath.git" "bundle/vim-classpath"
+"git://github.com/timgreen/vim-tagbar.git" "bundle/vim-tagbar"
