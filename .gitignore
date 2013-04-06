@@ -37,3 +37,4 @@ bundle/*/
 /bundle/vim-tbone/
 /bundle/vim-sensible/
 /bundle/MatchTag/
+/bundle/vim-python-matchit/
