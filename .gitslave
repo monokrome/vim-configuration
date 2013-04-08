@@ -8,7 +8,6 @@
 "https://github.com/sjl/gundo.vim.git" "bundle/gundo"
 "https://github.com/tpope/vim-surround" "bundle/surround"
 "https://github.com/vim-scripts/L9.git" "bundle/L9"
-"https://github.com/ervandew/supertab" "bundle/supertab"
 "https://github.com/Raimondi/delimitMate.git" "bundle/delimitMate"
 "https://github.com/vim-scripts/TaskList.vim.git" "bundle/TaskList"
 "https://github.com/mattn/gist-vim.git" "bundle/gist"
