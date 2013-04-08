@@ -37,3 +37,4 @@
 "git://github.com/timgreen/vim-tagbar.git" "bundle/vim-tagbar"
 "git://github.com/vim-scripts/Better-CSS-Syntax-for-Vim.git" "bundle/Better-CSS-Syntax-for-Vim"
 "git://github.com/vim-scripts/xptemplate.git" "bundle/xptemplate"
+"git://github.com/Valloric/YouCompleteMe.git" "bundle/YouCompleteMe"
