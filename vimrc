@@ -39,4 +39,5 @@ Bundle 'vim-scripts/VimClojure'
 Bundle 'vim-scripts/closetag.vim'
 Bundle 'vim-scripts/netrw.vim'
 Bundle 'voithos/vim-python-matchit'
+Bundle 'wavded/vim-stylus'
 
