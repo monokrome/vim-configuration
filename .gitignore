@@ -10,7 +10,6 @@
 
 bundle/*/
 
-/pathogen/
 /bundle/gundo/
 /bundle/surround/
 /bundle/AutoClose/
