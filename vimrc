@@ -7,7 +7,7 @@ Bundle 'Rip-Rip/clang_complete'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'drmingdrmer/xptemplate'
-Bundle 'gmarik/vundle
+Bundle 'gmarik/vundle'
 Bundle 'gregsexton/MatchTag'
 Bundle 'groenewege/vim-less'
 Bundle 'jnwhiteh/vim-golang'
