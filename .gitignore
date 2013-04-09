@@ -1,5 +1,7 @@
 /tmp/*
-!/tmp/*/README.md
+!/tmp/undo/README.md
+!/tmp/backup/README.md
+!/tmp/swap/README.md
 
 .*
 !.gitmodules
