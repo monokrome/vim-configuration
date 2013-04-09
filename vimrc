@@ -37,6 +37,7 @@ Bundle 'vim-scripts/MatchTag'
 Bundle 'vim-scripts/TaskList.vim'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'vim-scripts/closetag.vim'
+Bundle 'vim-scripts/netrw.vim'
 Bundle 'vim-scripts/xptemplate'
 Bundle 'voithos/vim-python-matchit'
 
