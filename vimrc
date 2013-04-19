@@ -59,4 +59,5 @@ Bundle 'vim-scripts/netrw.vim'
 Bundle 'voithos/vim-python-matchit'
 Bundle 'wavded/vim-stylus'
 Bundle 'mattn/webapi-vim'
+Bundle 'taxilian/a.vim'
 
