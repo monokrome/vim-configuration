@@ -3,7 +3,6 @@ call vundle#rc()
 
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'Raimondi/delimitMate'
-Bundle 'Rip-Rip/clang_complete'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'drmingdrmer/xptemplate'
