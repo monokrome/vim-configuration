@@ -4,6 +4,7 @@ call vundle#rc()
 
 Bundle 'Raimondi/delimitMate'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chrisbra/csv.vim'
 Bundle 'drmingdrmer/xptemplate'
