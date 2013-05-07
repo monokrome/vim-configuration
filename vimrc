@@ -1,7 +1,6 @@
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
