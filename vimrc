@@ -1,4 +1,5 @@
 set rtp+=~/.vim/bundle/vundle/
+
 call vundle#rc()
 
 Bundle 'Raimondi/delimitMate'
