@@ -4,6 +4,9 @@ set rtp+=~/.vim/bundle/vundle/
 
 call vundle#rc()
 
+" Set comma to the leader key
+let mapleader=','
+
 Bundle 'Raimondi/delimitMate'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'airblade/vim-gitgutter'
