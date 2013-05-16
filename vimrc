@@ -7,6 +7,7 @@ call vundle#rc()
 " Set comma to the leader key
 let mapleader=','
 
+Bundle 'FredKSchott/CoVim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'airblade/vim-gitgutter'
