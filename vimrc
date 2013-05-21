@@ -8,6 +8,7 @@ call vundle#rc()
 let mapleader=','
 
 Bundle 'FredKSchott/CoVim'
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'airblade/vim-gitgutter'
