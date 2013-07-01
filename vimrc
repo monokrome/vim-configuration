@@ -12,7 +12,6 @@ if version >= 730
 endif
 
 Bundle 'FredKSchott/CoVim'
-Bundle 'LimpidTech/vimpy'
 Bundle 'LimpidTech/vimpy_examples'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Raimondi/delimitMate'
@@ -32,7 +31,7 @@ Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'tpope/vim-obsession'
-Bundle 'monokrome/Vimpy'
+Bundle 'monokrome/vimpy'
 Bundle 'monokrome/vim-user-configuration'
 Bundle 'mutewinter/nginx.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
@@ -77,4 +76,5 @@ Bundle 'vim-scripts/closetag.vim'
 Bundle 'vim-scripts/django.vim'
 Bundle 'voithos/vim-python-matchit'
 Bundle 'wavded/vim-stylus'
+Bundle 'xolox/vim-session'
 
