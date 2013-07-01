@@ -11,6 +11,8 @@ if version >= 730
   Bundle 'Valloric/YouCompleteMe'
 endif
 
+Bundle 'monokrome/vim-user-configuration'
+
 Bundle 'FredKSchott/CoVim'
 Bundle 'LimpidTech/vimpy_examples'
 Bundle 'Lokaltog/vim-easymotion'
@@ -31,7 +33,6 @@ Bundle 'majutsushi/tagbar'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'monokrome/vim-user-configuration'
 Bundle 'monokrome/vimpy'
 Bundle 'mutewinter/nginx.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
