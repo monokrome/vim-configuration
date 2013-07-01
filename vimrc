@@ -7,12 +7,15 @@ call vundle#rc()
 " Set comma to the leader key
 let mapleader=','
 
+if version >= 730
+  Bundle 'Valloric/YouCompleteMe'
+endif
+
 Bundle 'FredKSchott/CoVim'
 Bundle 'LimpidTech/vimpy'
 Bundle 'LimpidTech/vimpy_examples'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Raimondi/delimitMate'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chrisbra/csv.vim'
@@ -29,6 +32,7 @@ Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'tpope/vim-obsession'
+Bundle 'monokrome/Vimpy'
 Bundle 'monokrome/vim-user-configuration'
 Bundle 'mutewinter/nginx.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
