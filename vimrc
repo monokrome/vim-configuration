@@ -76,6 +76,4 @@ Bundle 'vim-scripts/closetag.vim'
 Bundle 'vim-scripts/django.vim'
 Bundle 'voithos/vim-python-matchit'
 Bundle 'wavded/vim-stylus'
-Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-session'
 
