@@ -13,7 +13,6 @@ endif
 
 Bundle 'monokrome/vim-user-configuration'
 
-Bundle 'FredKSchott/CoVim'
 Bundle 'LimpidTech/vimpy_examples'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Shougo/unite.vim'
