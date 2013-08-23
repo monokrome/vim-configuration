@@ -1,1 +1,1 @@
-"https://github.com/gmarik/vundle.git" "bundle/vundle"
+"git://github.com/Shougo/neobundle.vim" "bundle/neobundle.vim"
