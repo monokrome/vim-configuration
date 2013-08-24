@@ -14,6 +14,7 @@ if version >= 730
 endif
 
 NeoBundleFetch 'Shougo/neobundle.vim'
+
 NeoBundle 'monokrome/vim-user-configuration'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/unite.vim'
