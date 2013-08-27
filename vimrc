@@ -9,17 +9,14 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Set comma to the leader key
 let mapleader=','
 
-if version >= 730
-  Bundle 'Valloric/YouCompleteMe'
-endif
 
 NeoBundleFetch 'Shougo/neobundle.vim'
-
 NeoBundle 'monokrome/vim-user-configuration'
+
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim'
-NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'Valloric/YouCompleteMe', { "build": { "unix": "./install.sh --clang-completer" } }
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'alfredodeza/coveragepy.vim'
 NeoBundle 'altercation/vim-colors-solarized'
@@ -37,6 +34,7 @@ NeoBundle 'majutsushi/tagbar'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'michaeljsmith/vim-indent-object'
+NeoBundle 'monokrome/vim-flow'
 NeoBundle 'mutewinter/nginx.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'neochrome/todo.vim'
@@ -80,5 +78,4 @@ NeoBundle 'vim-scripts/closetag.vim'
 NeoBundle 'vim-scripts/django.vim'
 NeoBundle 'voithos/vim-python-matchit'
 NeoBundle 'wavded/vim-stylus'
-NeoBundle 'monokrome/vim-flow'
 
