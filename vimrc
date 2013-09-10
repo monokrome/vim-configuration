@@ -78,4 +78,4 @@ NeoBundle 'vim-scripts/closetag.vim'
 NeoBundle 'vim-scripts/django.vim'
 NeoBundle 'voithos/vim-python-matchit'
 NeoBundle 'wavded/vim-stylus'
-
+NeoBundle 'duff/vim-bufonly'
