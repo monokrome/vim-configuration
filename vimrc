@@ -16,7 +16,7 @@ NeoBundle 'monokrome/vim-user-configuration'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim'
-NeoBundle 'Valloric/YouCompleteMe', { "build": { "unix": "./install.sh --clang-completer" } }
+NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'alfredodeza/coveragepy.vim'
 NeoBundle 'altercation/vim-colors-solarized'
