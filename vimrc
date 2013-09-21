@@ -11,6 +11,7 @@ let mapleader=','
 
 
 NeoBundleFetch 'Shougo/neobundle.vim'
+
 NeoBundle 'monokrome/vim-user-configuration'
 
 NeoBundle 'Lokaltog/vim-easymotion'
@@ -20,7 +21,6 @@ NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'alfredodeza/coveragepy.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'bling/vim-airline'
 NeoBundle 'chrisbra/csv.vim'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'drmingdrmer/xptemplate'
@@ -29,6 +29,7 @@ NeoBundle 'gmarik/vundle'
 NeoBundle 'gregsexton/MatchTag'
 NeoBundle 'h1mesuke/unite-outline'
 NeoBundle 'https://github.com/pangloss/vim-javascript'
+NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'kana/vim-exjumplist'
 NeoBundle 'kchmck/vim-coffee-script'
