@@ -38,6 +38,7 @@ NeoBundle 'majutsushi/tagbar'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'michaeljsmith/vim-indent-object'
+NeoBundle 'moll/vim-node'
 NeoBundle 'monokrome/vim-flow'
 NeoBundle 'mutewinter/nginx.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
@@ -82,4 +83,5 @@ NeoBundle 'vim-scripts/closetag.vim'
 NeoBundle 'vim-scripts/django.vim'
 NeoBundle 'voithos/vim-python-matchit'
 NeoBundle 'wavded/vim-stylus'
+
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
