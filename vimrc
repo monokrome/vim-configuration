@@ -6,27 +6,27 @@ endif
 
 call neobundle#rc(expand('~/.vim/bundle/'))
 
-" Set comma to the leader key
-let mapleader=','
-
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'monokrome/vim-user-configuration'
+NeoBundle 'Shougo/unite.vim'
 
 NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'alfredodeza/coveragepy.vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'chrisbra/csv.vim'
+NeoBundle 'dart-lang/dart-vim-plugin'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'drmingdrmer/xptemplate'
 NeoBundle 'duff/vim-bufonly'
 NeoBundle 'gmarik/vundle'
 NeoBundle 'gregsexton/MatchTag'
+NeoBundle 'guns/vim-clojure-static'
 NeoBundle 'h1mesuke/unite-outline'
 NeoBundle 'https://github.com/pangloss/vim-javascript'
 NeoBundle 'itchyny/lightline.vim'
@@ -39,6 +39,7 @@ NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'michaeljsmith/vim-indent-object'
 NeoBundle 'moll/vim-node'
+NeoBundle 'monokrome/openssl.vim'
 NeoBundle 'monokrome/vim-flow'
 NeoBundle 'mutewinter/nginx.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
@@ -83,5 +84,11 @@ NeoBundle 'vim-scripts/closetag.vim'
 NeoBundle 'vim-scripts/django.vim'
 NeoBundle 'voithos/vim-python-matchit'
 NeoBundle 'wavded/vim-stylus'
+NeoBundle 'wting/rust.vim'
 
-NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
+NeoBundleLazy 'jelera/vim-javascript-syntax', {
+  \ 'autoload':{
+  \   'filetypes':[
+  \     'javascript'
+  \   ]
+  \ }}
