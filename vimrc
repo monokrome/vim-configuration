@@ -12,10 +12,13 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'monokrome/vim-user-configuration'
 NeoBundle 'Shougo/unite.vim'
 
+if v:version >= 704
+  NeoBundle 'Valloric/YouCompleteMe'
+endif
+
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'Shougo/vimproc.vim'
-NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'alfredodeza/coveragepy.vim'
 NeoBundle 'altercation/vim-colors-solarized'
