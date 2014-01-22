@@ -17,7 +17,6 @@ if (v:version == 703 && has('patch584')) || v:version >= 704
 endif
 
 
-NeoBundle 'kana/vim-exjumplist'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'Shougo/vimproc.vim'
@@ -37,6 +36,7 @@ NeoBundle 'https://github.com/pangloss/vim-javascript'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'johnsyweb/vim-makeshift.git'
+NeoBundle 'kana/vim-exjumplist'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'lunaru/vim-less'
 NeoBundle 'majutsushi/tagbar'
@@ -53,6 +53,7 @@ NeoBundle 'othree/html5.vim'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'sjl/badwolf'
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'smerrill/vagrant-vim'
 NeoBundle 'taxilian/a.vim'
