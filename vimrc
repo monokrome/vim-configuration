@@ -98,3 +98,5 @@ NeoBundleLazy 'jelera/vim-javascript-syntax', {
   \     'javascript'
   \   ]
   \ }}
+
+NeoBundleCheck
