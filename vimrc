@@ -91,8 +91,7 @@ NeoBundle 'voithos/vim-python-matchit'
 NeoBundle 'wavded/vim-stylus'
 NeoBundle 'wting/rust.vim'
 
-
-NeoBundleLazy 'jelera/vim-javascript-syntax', {
+NeoBundle 'jelera/vim-javascript-syntax', {
   \ 'autoload':{
   \   'filetypes':[
   \     'javascript'
