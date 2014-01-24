@@ -98,5 +98,5 @@ NeoBundle 'jelera/vim-javascript-syntax', {
   \   ]
   \ }}
 
-NeoBundleClean!
+silent NeoBundleClean!
 NeoBundleCheck
