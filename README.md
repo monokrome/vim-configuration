@@ -4,7 +4,7 @@ the name 'bundle'. On UNIX-like operating systems (OS X, Linux, BSD, AMIGA,
 etc) you can do this with the following commands:
 
 ```bash
-    cd ~ && git clone https://github.com/monokrome/vim-config .vim
+cd ~ && git clone https://github.com/monokrome/vim-config .vim
 ```
 
 If you are on Windows, then you should clone the repository to the directory
@@ -12,7 +12,7 @@ If you are on Windows, then you should clone the repository to the directory
 done like so:
 
 ```bash
-    cd ~ && git clone https://github.com/monokrome/vim-config vimfiles
+cd ~ && git clone https://github.com/monokrome/vim-config vimfiles
 ```
 
 **NOTE:** If you use Windows, do not have gitslave, or do not want to install
@@ -25,11 +25,15 @@ itself.
 
 You can easily install git slave in OS X if you have homebrew:
 
-    brew install gitslave
+```bash
+brew install gitslave
+```
 
 Now, you can have git slave populate the bundles:
 
-    gits populate
+```bash
+cd ~/.vim && gits populate
+```
 
 
 [nb]: https://github.com/Shougo/neobundle.vim/blob/master/README.md#quick-start "NeoBundle QuickStart"
