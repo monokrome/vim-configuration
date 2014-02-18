@@ -34,6 +34,7 @@ NeoBundle 'guns/vim-clojure-static'
 NeoBundle 'https://github.com/pangloss/vim-javascript'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'ivalkeen/vim-simpledb.git'
+NeoBundle 'jmcomets/vim-pony'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'johnsyweb/vim-makeshift.git'
 NeoBundle 'kana/vim-exjumplist'
@@ -93,6 +94,7 @@ NeoBundle 'vim-scripts/django.vim'
 NeoBundle 'voithos/vim-python-matchit'
 NeoBundle 'wavded/vim-stylus'
 NeoBundle 'wting/rust.vim'
+
 
 NeoBundle 'jelera/vim-javascript-syntax', {
   \ 'autoload':{
