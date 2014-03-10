@@ -20,6 +20,7 @@ if (v:version == 703 && has('patch584')) || v:version >= 704
   NeoBundle 'Valloric/YouCompleteMe'
 endif
 
+
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Shougo/vimfiler.vim'
@@ -77,7 +78,7 @@ NeoBundle 'tpope/vim-fireplace'
 NeoBundle 'tpope/vim-flatfoot'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'
-NeoBundle 'tpope/vim-markdown'
+NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'tpope/vim-obsession'
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-rhubarb'
@@ -99,7 +100,7 @@ NeoBundle 'vim-scripts/django.vim'
 NeoBundle 'voithos/vim-python-matchit'
 NeoBundle 'wavded/vim-stylus'
 NeoBundle 'wting/rust.vim'
-NeoBundle 'zhaocai/GoldenView.Vim'
+NeoBundleDisable 'zhaocai/GoldenView.Vim'
 
 
 NeoBundle 'jelera/vim-javascript-syntax', {
