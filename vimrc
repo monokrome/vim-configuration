@@ -1,120 +1,127 @@
+" Disable Vi compatibility
 set nocompatible
 
 
+" Initialize NeoBundle, and let it manage updating itself.
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
-
-
 call neobundle#rc(expand('~/.vim/bundle/'))
-
-
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 
+" My custom configurations. This is akin to what most people might put into one
+" giant .vimrc file.
 NeoBundle 'monokrome/vim-user-configuration'
-NeoBundle 'Shougo/unite.vim'
 
 
+" Utility plugins - used by other scripts for their features.
+NeoBundle 'Shougo/unite.vim' " Library for generalized navigation of item lists
+NeoBundle 'Shougo/vimproc.vim' " Asyncronous processing to VimScript commands
+NeoBundle 'mattn/webapi-vim' " HTTP access to VimScript commands
+NeoBundle 'rizzatti/funcoo.vim' " Adds 'object-oriented' constructs to VimL
+NeoBundle 'vim-scripts/L9' " Helper library for VimL
+
+
+" Very smart completion engine for Python and C.
+" TODO: Deprecate this, because it's an architectural nightmare.
 if (v:version == 703 && has('patch584')) || v:version >= 704
   NeoBundle 'Valloric/YouCompleteMe'
 endif
 
 
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'Shougo/unite-outline'
-NeoBundle 'Shougo/vimproc.vim'
-NeoBundle 'alfredodeza/coveragepy.vim'
-NeoBundle 'altercation/vim-colors-solarized'
+" Helper plugins
+NeoBundle 'Lokaltog/vim-easymotion' " Allows quick motions to characters that are currently in vim
+NeoBundle 'Shougo/unite-outline' " A nested outline of the current buffer's tags
+NeoBundle 'alfredodeza/coveragepy.vim' " Coverage.py reporting via Vim signs
+NeoBundle 'altercation/vim-colors-solarized' " Solarized color scheme
+NeoBundle 'drmingdrmer/xptemplate' " Support for TextMate-style snippets in Vim
+NeoBundle 'duff/vim-bufonly' " A command for removing all buffers except the active one
+NeoBundle 'gcmt/wildfire.vim' " Smart visual selection of nearest objects by pressing <Enter>
+NeoBundle 'goldfeld/vim-seek' " A two-character context version of the 'f' and 'F' motion
+NeoBundle 'gregsexton/MatchTag' " Highlights matching tags when the cursor is over one of them
+NeoBundle 'itchyny/lightline.vim' " A lightweight alternative to PowerLIne for pretty statusbars
+NeoBundle 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
+NeoBundle 'johnsyweb/vim-makeshift.git' " 'intelligent' selection of makeprg
+NeoBundle 'kana/vim-exjumplist' " Plug mappings to jump between buffers in the jumplist
+NeoBundle 'majutsushi/tagbar' " A tagbar pane for the current buffer
+NeoBundle 'mattn/gist-vim' " Allows simple posting to Gist from within Vim
+NeoBundle 'mhinz/vim-signify' " Signs that describe your current SCM changeset
+NeoBundle 'michaeljsmith/vim-indent-object' " An indentation (i) text object for indent-based languages
+NeoBundle 'monokrome/openssl.vim' " Allows wrapping Vim's I/O around OpenSSL
+NeoBundle 'monokrome/vim-flow' " Rhyme completion and syllable counting
+NeoBundle 'nathanaelkane/vim-indent-guides' " Guide lines for indentation
+NeoBundle 'neochrome/todo.vim' " A todo list for Vim.
+NeoBundle 'nicholaides/words-to-avoid.vim' " Highlights words that should be avoided in technical writing
+NeoBundle 'scrooloose/syntastic' " Wraps semantic analysis into various UIs in Vim
+NeoBundle 'sjl/badwolf' " A nice, warm color scheme
+NeoBundle 'sjl/gundo.vim' " Tools to help better manage the undo tree
+NeoBundle 'taxilian/a.vim' " Commands for jumping between alternate related files
+NeoBundle 'terryma/vim-multiple-cursors' " The ability to use multiple cursors
+NeoBundle 'tpope/heroku-remote' " Helpers for working with Heroku
+NeoBundle 'tpope/vim-abolish' " For performing replaces, fixing typos, and otherwise managing many variants of phrases
+NeoBundle 'tpope/vim-characterize' " Enhances 'ga' to provide more useful information
+NeoBundle 'tpope/vim-classpath' " Manages the Java classpath
+NeoBundle 'tpope/vim-commentary' " Comment and uncomment lines with 'gc' verbs
+NeoBundle 'tpope/vim-dispatch' " Forks processes from Vim, and get their output in a buffer after they finish.
+NeoBundle 'tpope/vim-endwise' " Automatically insert redundant block-closing code
+NeoBundle 'tpope/vim-eunuch' " File management from inside Vim
+NeoBundle 'tpope/vim-fireplace' " Clojure REPL integration
+NeoBundle 'tpope/vim-flatfoot' " Smarter mappings for the {f,F,t,T} motions using CTRL.
+NeoBundle 'tpope/vim-fugitive' " Git integration
+NeoBundle 'tpope/vim-jdaddy' " JSON text objects
+NeoBundle 'tpope/vim-obsession' " Automatic session management via :Obsession
+NeoBundle 'tpope/vim-repeat' " Makes repeat even more powerful
+NeoBundle 'tpope/vim-rhubarb' " Tools for interacting with the social aspect of GitHub
+NeoBundle 'tpope/vim-sensible' " Somewhat sensible defaults for modernizing Vim a bit by default.
+NeoBundle 'tpope/vim-sleuth' " Automatic exploration of related files to set up indentation settings
+NeoBundle 'tpope/vim-speeddating' " Manages dates more easily by adding support for them to CTRL-A/CTRL-X
+NeoBundle 'tpope/vim-surround' " Automates insertion of surrounding characters (IE, } after {)
+NeoBundle 'tpope/vim-tbone' " Basic integrations between tmux and Vim
+NeoBundle 'tpope/vim-unimpaired' " Nice keybinds for toggling, enabling, navigating, etc. using [, ], and c.
+NeoBundle 'tpope/vim-vinegar' " Manage file/directory navigation more easily while sticking with netrw.
+NeoBundle 'tsukkee/unite-tag.git' " Search tagfiles via Unite
+NeoBundle 'vim-scripts/TaskList.vim' " Provides lists of tasks (TODO, FIXME, etc) related to the current buffer
+NeoBundle 'vim-scripts/closetag.vim' " Reduces redudant typing in XML-like file types
+NeoBundle 'voithos/vim-python-matchit' " Allows the % motion to work with Python keywords.
+
+
+" Language bundles
 NeoBundle 'chrisbra/csv.vim'
 NeoBundle 'dart-lang/dart-vim-plugin'
 NeoBundle 'digitaltoad/vim-jade'
-NeoBundle 'drmingdrmer/xptemplate'
-NeoBundle 'duff/vim-bufonly'
 NeoBundle 'ekalinin/Dockerfile.vim'
-NeoBundle 'gcmt/wildfire.vim'
-NeoBundle 'gmarik/vundle'
-NeoBundle 'goldfeld/vim-seek'
-NeoBundle 'gregsexton/MatchTag'
 NeoBundle 'guns/vim-clojure-static'
 NeoBundle 'https://github.com/pangloss/vim-javascript'
-NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'ivalkeen/vim-simpledb'
-NeoBundle 'jaxbot/github-issues.vim'
-NeoBundle 'jmcomets/vim-pony'
+NeoBundle 'ivalkeen/vim-simpledb' 
+NeoBundle 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 NeoBundle 'jnwhiteh/vim-golang'
-NeoBundle 'johnsyweb/vim-makeshift.git'
-NeoBundle 'kana/vim-exjumplist'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'lunaru/vim-less'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'mattn/gist-vim'
-NeoBundle 'mattn/webapi-vim'
-NeoBundle 'mhinz/vim-signify'
-NeoBundle 'michaeljsmith/vim-indent-object'
 NeoBundle 'mintplant/vim-literate-coffeescript.git'
-NeoBundle 'moll/vim-node'
-NeoBundle 'monokrome/openssl.vim'
-NeoBundle 'monokrome/vim-flow'
 NeoBundle 'mutewinter/nginx.vim'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'neochrome/todo.vim'
-NeoBundle 'nicholaides/words-to-avoid.vim'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'rizzatti/funcoo.vim'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'sjl/badwolf'
-NeoBundle 'sjl/gundo.vim'
-NeoBundle 'smerrill/vagrant-vim'
-NeoBundle 'taxilian/a.vim'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'tpope/heroku-remote'
-NeoBundle 'tpope/vim-abolish'
-NeoBundle 'tpope/vim-characterize'
-NeoBundle 'tpope/vim-classpath'
-NeoBundle 'tpope/vim-commentary'
-NeoBundle 'tpope/vim-dispatch'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'tpope/vim-fireplace'
-NeoBundle 'tpope/vim-flatfoot'
-NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'
-NeoBundle 'tpope/vim-jdaddy'
-NeoBundle 'tpope/vim-obsession'
-NeoBundle 'tpope/vim-repeat'
-NeoBundle 'tpope/vim-rhubarb'
-NeoBundle 'tpope/vim-sensible'
-NeoBundle 'tpope/vim-sleuth'
-NeoBundle 'tpope/vim-speeddating'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-tbone'
-NeoBundle 'tpope/vim-unimpaired'
-NeoBundle 'tpope/vim-vinegar'
-NeoBundle 'tsukkee/unite-tag.git'
-NeoBundle 'uggedal/go-vim'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
-NeoBundle 'vim-scripts/L9'
-NeoBundle 'vim-scripts/TaskList.vim'
-NeoBundle 'vim-scripts/VimClojure'
-NeoBundle 'vim-scripts/closetag.vim'
-NeoBundle 'vim-scripts/django.vim'
-NeoBundle 'voithos/vim-python-matchit'
 NeoBundle 'wavded/vim-stylus'
-NeoBundle 'wting/rust.vim'
-NeoBundleDisable 'rizzatti/dash.vim'
-NeoBundleDisable 'zhaocai/GoldenView.Vim'
+NeoBundle 'wting/rust.vim' 
+NeoBundle 'vim-scripts/JavaScript-Indent'
+NeoBundle 'marijnh/tern_for_vim'
 
 
-NeoBundle 'jelera/vim-javascript-syntax', {
-  \ 'autoload':{
-  \   'filetypes':[
-  \     'javascript'
-  \   ]
-  \ }}
+" Framework-specific bundles
+NeoBundle 'jmcomets/vim-pony' " Wraps Django commands into Vim commands
+NeoBundle 'moll/vim-node' " Helpers for working in NodeJS
+NeoBundle 'smerrill/vagrant-vim' " Automatically set `ruby` filetype on Vagrantfile
+NeoBundle 'vim-scripts/django.vim' " Syntax highlighting for Django templates
 
 
-silent NeoBundleClean!
-NeoBundleCheck
+" Bundles that are intentionally disabled
+NeoBundleDisable 'rizzatti/dash.vim' " Look up documentation using the OS X Dash app
+NeoBundleDisable 'zhaocai/GoldenView.Vim' " Automatically organizes Vim's windows similarly to DWM
+
+
+silent NeoBundleClean! " Clean unnecessary bundles
+NeoBundleCheck " Check for any new ones.
