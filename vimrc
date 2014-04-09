@@ -74,6 +74,7 @@ NeoBundle 'tpope/vim-fugitive' " Git integration
 NeoBundle 'tpope/vim-jdaddy' " JSON text objects
 NeoBundle 'tpope/vim-obsession' " Automatic session management via :Obsession
 NeoBundle 'tpope/vim-repeat' " Makes repeat even more powerful
+NeoBundle 'tpope/vim-projectile' " Scaffolding in Vim
 NeoBundle 'tpope/vim-rhubarb' " Tools for interacting with the social aspect of GitHub
 NeoBundle 'tpope/vim-sensible' " Somewhat sensible defaults for modernizing Vim a bit by default.
 NeoBundle 'tpope/vim-sleuth' " Automatic exploration of related files to set up indentation settings
