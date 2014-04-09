@@ -126,5 +126,5 @@ NeoBundleDisable 'rizzatti/dash.vim' " Look up documentation using the OS X Dash
 NeoBundleDisable 'zhaocai/GoldenView.Vim' " Automatically organizes Vim's windows similarly to DWM
 
 
-silent NeoBundleClean! " Clean unnecessary bundles
+" silent NeoBundleClean! " Clean unnecessary bundles
 NeoBundleCheck " Check for any new ones.
