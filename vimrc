@@ -27,6 +27,8 @@ NeoBundle 'vim-scripts/L9' " Helper library for VimL
 " TODO: Deprecate this, because it's an architectural nightmare.
 if (v:version == 703 && has('patch584')) || v:version >= 704
   NeoBundle 'Valloric/YouCompleteMe'
+else
+  NeoBundleDisable 'Valloric/YouCompleteMe'
 endif
 
 
