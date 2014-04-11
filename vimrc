@@ -17,10 +17,19 @@ NeoBundle 'monokrome/vim-user-configuration'
 
 " Utility plugins - used by other scripts for their features.
 NeoBundle 'Shougo/unite.vim' " Library for generalized navigation of item lists
-NeoBundle 'Shougo/vimproc.vim' " Asyncronous processing to VimScript commands
 NeoBundle 'mattn/webapi-vim' " HTTP access to VimScript commands
 NeoBundle 'rizzatti/funcoo.vim' " Adds 'object-oriented' constructs to VimL
 NeoBundle 'vim-scripts/L9' " Helper library for VimL
+
+" Asyncronous processing to VimScript commands
+NeoBundle 'Shougo/vimproc', {
+    \ 'build' : {
+    \     'windows' : 'make -f make_mingw32.mak',
+    \     'cygwin' : 'make -f make_cygwin.mak',
+    \     'mac' : 'make -f make_mac.mak',
+    \     'unix' : 'make -f make_unix.mak',
+    \    },
+    \ }
 
 
 " Very smart completion engine for Python and C.
