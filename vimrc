@@ -52,7 +52,7 @@ NeoBundle 'gcmt/wildfire.vim' " Smart visual selection of nearest objects by pre
 NeoBundle 'goldfeld/vim-seek' " A two-character context version of the 'f' and 'F' motion
 NeoBundle 'gregsexton/MatchTag' " Highlights matching tags when the cursor is over one of them
 NeoBundle 'itchyny/lightline.vim' " A lightweight alternative to PowerLIne for pretty statusbars
-NeoBundle 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
+" NeoBundle 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
 NeoBundle 'johnsyweb/vim-makeshift.git' " 'intelligent' selection of makeprg
 NeoBundle 'kana/vim-exjumplist' " Plug mappings to jump between buffers in the jumplist
 NeoBundle 'majutsushi/tagbar' " A tagbar pane for the current buffer
@@ -96,6 +96,7 @@ NeoBundle 'tsukkee/unite-tag.git' " Search tagfiles via Unite
 NeoBundle 'vim-scripts/TaskList.vim' " Provides lists of tasks (TODO, FIXME, etc) related to the current buffer
 NeoBundle 'vim-scripts/closetag.vim' " Reduces redudant typing in XML-like file types
 NeoBundle 'voithos/vim-python-matchit' " Allows the % motion to work with Python keywords.
+NeoBundle 'tommcdo/vim-exchange.git' " Use cx to exchange text over motions
 
 
 " Language bundles
