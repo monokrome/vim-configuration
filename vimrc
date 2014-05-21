@@ -136,4 +136,4 @@ NeoBundleDisable 'zhaocai/GoldenView.Vim' " Automatically organizes Vim's window
 
 
 " silent NeoBundleClean! " Clean unnecessary bundles
-NeoBundleCheck " Check for any new ones.
+" NeoBundleCheck " Check for any new ones.
