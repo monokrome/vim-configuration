@@ -42,8 +42,10 @@ endif
 
 
 " Helper plugins
+" NeoBundle 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
 NeoBundle 'Lokaltog/vim-easymotion' " Allows quick motions to characters that are currently in vim
 NeoBundle 'Shougo/unite-outline' " A nested outline of the current buffer's tags
+NeoBundle 'SirVer/ultisnips' " Much smarter TextMate-style snippet support
 NeoBundle 'altercation/vim-colors-solarized' " Solarized color scheme
 NeoBundle 'drmingdrmer/xptemplate' " Support for TextMate-style snippets in Vim
 NeoBundle 'duff/vim-bufonly' " A command for removing all buffers except the active one
@@ -53,7 +55,6 @@ NeoBundle 'goldfeld/vim-seek' " A two-character context version of the 'f' and '
 NeoBundle 'gregsexton/MatchTag' " Highlights matching tags when the cursor is over one of them
 NeoBundle 'guns/vim-sexp' " More nice text objects, operators, and motions!
 NeoBundle 'itchyny/lightline.vim' " A lightweight alternative to PowerLIne for pretty statusbars
-" NeoBundle 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
 NeoBundle 'johnsyweb/vim-makeshift.git' " 'intelligent' selection of makeprg
 NeoBundle 'kana/vim-exjumplist' " Plug mappings to jump between buffers in the jumplist
 NeoBundle 'majutsushi/tagbar' " A tagbar pane for the current buffer
@@ -70,6 +71,7 @@ NeoBundle 'sjl/badwolf' " A nice, warm color scheme
 NeoBundle 'sjl/gundo.vim' " Tools to help better manage the undo tree
 NeoBundle 'taxilian/a.vim' " Commands for jumping between alternate related files
 NeoBundle 'terryma/vim-multiple-cursors' " The ability to use multiple cursors
+NeoBundle 'tommcdo/vim-exchange.git' " Use cx to exchange text over motions
 NeoBundle 'tpope/heroku-remote' " Helpers for working with Heroku
 NeoBundle 'tpope/vim-abolish' " For performing replaces, fixing typos, and otherwise managing many variants of phrases
 NeoBundle 'tpope/vim-characterize' " Enhances 'ga' to provide more useful information
@@ -97,7 +99,6 @@ NeoBundle 'tsukkee/unite-tag.git' " Search tagfiles via Unite
 NeoBundle 'vim-scripts/TaskList.vim' " Provides lists of tasks (TODO, FIXME, etc) related to the current buffer
 NeoBundle 'vim-scripts/closetag.vim' " Reduces redudant typing in XML-like file types
 NeoBundle 'voithos/vim-python-matchit' " Allows the % motion to work with Python keywords.
-NeoBundle 'tommcdo/vim-exchange.git' " Use cx to exchange text over motions
 NeoBundle 'wellle/targets.vim' " Some smart generic text objects!
 
 
