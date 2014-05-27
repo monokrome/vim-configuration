@@ -44,13 +44,14 @@ endif
 " Helper plugins
 NeoBundle 'Lokaltog/vim-easymotion' " Allows quick motions to characters that are currently in vim
 NeoBundle 'Shougo/unite-outline' " A nested outline of the current buffer's tags
-NeoBundle 'alfredodeza/coveragepy.vim' " Coverage.py reporting via Vim signs
 NeoBundle 'altercation/vim-colors-solarized' " Solarized color scheme
 NeoBundle 'drmingdrmer/xptemplate' " Support for TextMate-style snippets in Vim
 NeoBundle 'duff/vim-bufonly' " A command for removing all buffers except the active one
 NeoBundle 'gcmt/wildfire.vim' " Smart visual selection of nearest objects by pressing <Enter>
+NeoBundle 'godlygeek/tabular' " Simplify horizontal alignment of text
 NeoBundle 'goldfeld/vim-seek' " A two-character context version of the 'f' and 'F' motion
 NeoBundle 'gregsexton/MatchTag' " Highlights matching tags when the cursor is over one of them
+NeoBundle 'guns/vim-sexp' " More nice text objects, operators, and motions!
 NeoBundle 'itchyny/lightline.vim' " A lightweight alternative to PowerLIne for pretty statusbars
 " NeoBundle 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
 NeoBundle 'johnsyweb/vim-makeshift.git' " 'intelligent' selection of makeprg
@@ -82,8 +83,8 @@ NeoBundle 'tpope/vim-flatfoot' " Smarter mappings for the {f,F,t,T} motions usin
 NeoBundle 'tpope/vim-fugitive' " Git integration
 NeoBundle 'tpope/vim-jdaddy' " JSON text objects
 NeoBundle 'tpope/vim-obsession' " Automatic session management via :Obsession
-NeoBundle 'tpope/vim-repeat' " Makes repeat even more powerful
 NeoBundle 'tpope/vim-projectile' " Scaffolding in Vim
+NeoBundle 'tpope/vim-repeat' " Makes repeat even more powerful
 NeoBundle 'tpope/vim-rhubarb' " Tools for interacting with the social aspect of GitHub
 NeoBundle 'tpope/vim-sensible' " Somewhat sensible defaults for modernizing Vim a bit by default.
 NeoBundle 'tpope/vim-sleuth' " Automatic exploration of related files to set up indentation settings
@@ -97,6 +98,7 @@ NeoBundle 'vim-scripts/TaskList.vim' " Provides lists of tasks (TODO, FIXME, etc
 NeoBundle 'vim-scripts/closetag.vim' " Reduces redudant typing in XML-like file types
 NeoBundle 'voithos/vim-python-matchit' " Allows the % motion to work with Python keywords.
 NeoBundle 'tommcdo/vim-exchange.git' " Use cx to exchange text over motions
+NeoBundle 'wellle/targets.vim' " Some smart generic text objects!
 
 
 " Language bundles
@@ -112,17 +114,25 @@ NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'lunaru/vim-less'
 NeoBundle 'mintplant/vim-literate-coffeescript.git'
+NeoBundle 'monokrome/vim-testdrive'
 NeoBundle 'mutewinter/nginx.vim'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'tpope/vim-git'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
-NeoBundle 'wavded/vim-stylus'
-NeoBundle 'wting/rust.vim' 
 NeoBundle 'vim-scripts/JavaScript-Indent'
-NeoBundle 'marijnh/tern_for_vim'
+NeoBundle 'wavded/vim-stylus'
+NeoBundle 'wting/rust.vim'
 
+NeoBundle 'marijnh/tern_for_vim', {
+    \ 'build' : {
+    \     'windows' : 'npm install',
+    \     'cygwin' : 'npm install',
+    \     'mac' : 'npm install',
+    \     'unix' : 'npm install',
+    \    },
+    \ }
 
 " Framework-specific bundles
 NeoBundle 'jmcomets/vim-pony' " Wraps Django commands into Vim commands
@@ -137,4 +147,4 @@ NeoBundleDisable 'zhaocai/GoldenView.Vim' " Automatically organizes Vim's window
 
 
 " silent NeoBundleClean! " Clean unnecessary bundles
-NeoBundleCheck " Check for any new ones.
+" NeoBundleCheck " Check for any new ones.
