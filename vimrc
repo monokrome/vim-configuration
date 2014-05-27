@@ -42,7 +42,6 @@ endif
 
 
 " Helper plugins
-" NeoBundle 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
 NeoBundle 'Lokaltog/vim-easymotion' " Allows quick motions to characters that are currently in vim
 NeoBundle 'Shougo/unite-outline' " A nested outline of the current buffer's tags
 NeoBundle 'SirVer/ultisnips' " Much smarter TextMate-style snippet support
@@ -100,6 +99,7 @@ NeoBundle 'vim-scripts/TaskList.vim' " Provides lists of tasks (TODO, FIXME, etc
 NeoBundle 'vim-scripts/closetag.vim' " Reduces redudant typing in XML-like file types
 NeoBundle 'voithos/vim-python-matchit' " Allows the % motion to work with Python keywords.
 NeoBundle 'wellle/targets.vim' " Some smart generic text objects!
+NeoBundleDisable 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
 
 
 " Language bundles
