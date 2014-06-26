@@ -46,7 +46,6 @@ NeoBundle 'Lokaltog/vim-easymotion' " Allows quick motions to characters that ar
 NeoBundle 'Shougo/unite-outline' " A nested outline of the current buffer's tags
 NeoBundle 'SirVer/ultisnips' " Much smarter TextMate-style snippet support
 NeoBundle 'altercation/vim-colors-solarized' " Solarized color scheme
-NeoBundle 'drmingdrmer/xptemplate' " Support for TextMate-style snippets in Vim
 NeoBundle 'duff/vim-bufonly' " A command for removing all buffers except the active one
 NeoBundle 'gcmt/wildfire.vim' " Smart visual selection of nearest objects by pressing <Enter>
 NeoBundle 'godlygeek/tabular' " Simplify horizontal alignment of text
