@@ -100,7 +100,6 @@ NeoBundle 'vim-scripts/TaskList.vim' " Provides lists of tasks (TODO, FIXME, etc
 NeoBundle 'vim-scripts/closetag.vim' " Reduces redudant typing in XML-like file types
 NeoBundle 'voithos/vim-python-matchit' " Allows the % motion to work with Python keywords.
 NeoBundle 'wellle/targets.vim' " Some smart generic text objects!
-NeoBundleDisable 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
 
 
 " Language bundles
@@ -143,7 +142,8 @@ NeoBundle 'smerrill/vagrant-vim' " Automatically set `ruby` filetype on Vagrantf
 NeoBundle 'vim-scripts/django.vim' " Syntax highlighting for Django templates
 
 
-" Bundles that are intentionally disabled
+" Bundles that are in timeout
+NeoBundleDisable 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
 NeoBundleDisable 'rizzatti/dash.vim' " Look up documentation using the OS X Dash app
 NeoBundleDisable 'zhaocai/GoldenView.Vim' " Automatically organizes Vim's windows similarly to DWM
 
