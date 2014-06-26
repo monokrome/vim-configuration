@@ -54,6 +54,7 @@ NeoBundle 'goldfeld/vim-seek' " A two-character context version of the 'f' and '
 NeoBundle 'gregsexton/MatchTag' " Highlights matching tags when the cursor is over one of them
 NeoBundle 'guns/vim-sexp' " More nice text objects, operators, and motions!
 NeoBundle 'itchyny/lightline.vim' " A lightweight alternative to PowerLIne for pretty statusbars
+NeoBundle 'jeetsukumaran/vim-nefertiti' " Colorscheme formerly known as MochaLatte
 NeoBundle 'johnsyweb/vim-makeshift.git' " 'intelligent' selection of makeprg
 NeoBundle 'kana/vim-exjumplist' " Plug mappings to jump between buffers in the jumplist
 NeoBundle 'majutsushi/tagbar' " A tagbar pane for the current buffer
