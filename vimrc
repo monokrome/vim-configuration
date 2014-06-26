@@ -53,6 +53,7 @@ NeoBundle 'godlygeek/tabular' " Simplify horizontal alignment of text
 NeoBundle 'goldfeld/vim-seek' " A two-character context version of the 'f' and 'F' motion
 NeoBundle 'gregsexton/MatchTag' " Highlights matching tags when the cursor is over one of them
 NeoBundle 'guns/vim-sexp' " More nice text objects, operators, and motions!
+NeoBundle 'honza/vim-snippets' " A decent library of standard snippets
 NeoBundle 'itchyny/lightline.vim' " A lightweight alternative to PowerLIne for pretty statusbars
 NeoBundle 'jeetsukumaran/vim-nefertiti' " Colorscheme formerly known as MochaLatte
 NeoBundle 'johnsyweb/vim-makeshift.git' " 'intelligent' selection of makeprg
