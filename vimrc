@@ -43,6 +43,7 @@ endif
 
 " Helper plugins
 NeoBundle 'Lokaltog/vim-easymotion' " Allows quick motions to characters that are currently in vim
+NeoBundle 'Raimondi/delimitMate.git' " Puts things after other things!
 NeoBundle 'Shougo/unite-outline' " A nested outline of the current buffer's tags
 NeoBundle 'SirVer/ultisnips' " Much smarter TextMate-style snippet support
 NeoBundle 'altercation/vim-colors-solarized' " Solarized color scheme
@@ -101,17 +102,16 @@ NeoBundle 'vim-scripts/closetag.vim' " Reduces redudant typing in XML-like file 
 NeoBundle 'voithos/vim-python-matchit' " Allows the % motion to work with Python keywords.
 NeoBundle 'wellle/targets.vim' " Some smart generic text objects!
 
-
 " Language bundles
 NeoBundle 'chrisbra/csv.vim'
 NeoBundle 'dart-lang/dart-vim-plugin'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'ekalinin/Dockerfile.vim'
+NeoBundle 'fatih/vim-go'
 NeoBundle 'guns/vim-clojure-static'
 NeoBundle 'https://github.com/pangloss/vim-javascript'
 NeoBundle 'ivalkeen/vim-simpledb' 
 NeoBundle 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
-NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'lunaru/vim-less'
 NeoBundle 'mintplant/vim-literate-coffeescript.git'
