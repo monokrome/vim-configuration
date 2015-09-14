@@ -6,7 +6,7 @@ set nocompatible
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 
@@ -34,20 +34,23 @@ NeoBundle 'Shougo/vimproc', {
 
 " Very smart completion engine for Python and C.
 " TODO: Deprecate this, because it's an architectural nightmare.
-if (v:version == 703 && has('patch584')) || v:version >= 704
-  NeoBundle 'Valloric/YouCompleteMe'
-else
-  NeoBundleDisable 'Valloric/YouCompleteMe'
-endif
+"                       Seriously, this plugin is a really bad joke.
+" if (v:version == 703 && has('patch584')) || v:version >= 704
+"   NeoBundle 'Valloric/YouCompleteMe'
+" else
+"   NeoBundleDisable 'Valloric/YouCompleteMe'
+" endif
 
 
 " Helper plugins
 NeoBundle 'Lokaltog/vim-easymotion' " Allows quick motions to characters that are currently in vim
 NeoBundle 'Raimondi/delimitMate.git' " Puts things after other things!
+NeoBundle 'Shougo/neocomplete' " Completion support that isn't YouCompleteMe
 NeoBundle 'Shougo/unite-outline' " A nested outline of the current buffer's tags
 NeoBundle 'SirVer/ultisnips' " Much smarter TextMate-style snippet support
 NeoBundle 'altercation/vim-colors-solarized' " Solarized color scheme
 NeoBundle 'duff/vim-bufonly' " A command for removing all buffers except the active one
+NeoBundle 'ervandew/supertab' " Use tab for completions (This breaks stuff?)
 NeoBundle 'gcmt/wildfire.vim' " Smart visual selection of nearest objects by pressing <Enter>
 NeoBundle 'godlygeek/tabular' " Simplify horizontal alignment of text
 NeoBundle 'goldfeld/vim-seek' " A two-character context version of the 'f' and 'F' motion
@@ -103,8 +106,10 @@ NeoBundle 'voithos/vim-python-matchit' " Allows the % motion to work with Python
 NeoBundle 'wellle/targets.vim' " Some smart generic text objects!
 
 " Language bundles
+NeoBundle 'Quramy/tsuquyomi'
 NeoBundle 'chrisbra/csv.vim'
 NeoBundle 'dart-lang/dart-vim-plugin'
+NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'fatih/vim-go'
@@ -113,6 +118,7 @@ NeoBundle 'https://github.com/pangloss/vim-javascript'
 NeoBundle 'ivalkeen/vim-simpledb' 
 NeoBundle 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'lunaru/vim-less'
 NeoBundle 'mintplant/vim-literate-coffeescript.git'
 NeoBundle 'monokrome/vim-testdrive'
@@ -142,11 +148,12 @@ NeoBundle 'smerrill/vagrant-vim' " Automatically set `ruby` filetype on Vagrantf
 NeoBundle 'vim-scripts/django.vim' " Syntax highlighting for Django templates
 
 
-" Bundles that are in timeout
-NeoBundleDisable 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
-NeoBundleDisable 'rizzatti/dash.vim' " Look up documentation using the OS X Dash app
-NeoBundleDisable 'zhaocai/GoldenView.Vim' " Automatically organizes Vim's windows similarly to DWM
+" Bundles that are in time-out
+" NeoBundleDisable 'jaxbot/github-issues.vim' " Completion providing GitHub issue information
+" NeoBundleDisable 'rizzatti/dash.vim' " Look up documentation using the OS X Dash app
+" NeoBundleDisable 'zhaocai/GoldenView.Vim' " Automatically organizes Vim's windows similarly to DWM
 
 
 " silent NeoBundleClean! " Clean unnecessary bundles
 " NeoBundleCheck " Check for any new ones.
+call neobundle#end()
