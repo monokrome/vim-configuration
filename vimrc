@@ -16,6 +16,7 @@ Plug 'mattn/webapi-vim' " HTTP access to VimScript commands
 Plug 'rizzatti/funcoo.vim' " Adds 'object-oriented' constructs to VimL
 Plug 'vim-scripts/L9' " Helper library for VimL
 
+
 " Asyncronous processing to VimScript commands
 Plug 'Shougo/vimproc', {
     \ 'build' : {
@@ -27,13 +28,16 @@ Plug 'Shougo/vimproc', {
     \ }
 
 
+" Colors
+Plug 'altercation/vim-colors-solarized' " Solarized color scheme
+Plug 'sjl/badwolf' " A nice, warm color scheme
+Plug 'junegunn/seoul256.vim' " Add seoul256.vim color scheme
+
 " Helper plugins
 Plug 'Lokaltog/vim-easymotion' " Allows quick motions to characters that are currently in vim
-Plug 'Raimondi/delimitMate.git' " Puts things after other things!
 Plug 'Shougo/neocomplete' " Completion support that isn't YouCompleteMe
 Plug 'Shougo/unite-outline' " A nested outline of the current buffer's tags
 Plug 'SirVer/ultisnips' " Much smarter TextMate-style snippet support
-Plug 'altercation/vim-colors-solarized' " Solarized color scheme
 Plug 'duff/vim-bufonly' " A command for removing all buffers except the active one
 Plug 'ervandew/supertab' " Use tab for completions (This breaks stuff?)
 Plug 'gcmt/wildfire.vim' " Smart visual selection of nearest objects by pressing <Enter>
@@ -44,7 +48,7 @@ Plug 'guns/vim-sexp' " More nice text objects, operators, and motions!
 Plug 'honza/vim-snippets' " A decent library of standard snippets
 Plug 'itchyny/lightline.vim' " A lightweight alternative to PowerLIne for pretty statusbars
 Plug 'jeetsukumaran/vim-nefertiti' " Colorscheme formerly known as MochaLatte
-Plug 'johnsyweb/vim-makeshift.git' " 'intelligent' selection of makeprg
+Plug 'johnsyweb/vim-makeshift' " 'intelligent' selection of makeprg
 Plug 'kana/vim-exjumplist' " Plug mappings to jump between buffers in the jumplist
 Plug 'majutsushi/tagbar' " A tagbar pane for the current buffer
 Plug 'mattn/gist-vim' " Allows simple posting to Gist from within Vim
@@ -56,11 +60,10 @@ Plug 'nathanaelkane/vim-indent-guides' " Guide lines for indentation
 Plug 'neochrome/todo.vim' " A todo list for Vim.
 Plug 'nicholaides/words-to-avoid.vim' " Highlights words that should be avoided in technical writing
 Plug 'scrooloose/syntastic' " Wraps semantic analysis into various UIs in Vim
-Plug 'sjl/badwolf' " A nice, warm color scheme
 Plug 'sjl/gundo.vim' " Tools to help better manage the undo tree
 Plug 'taxilian/a.vim' " Commands for jumping between alternate related files
 Plug 'terryma/vim-multiple-cursors' " The ability to use multiple cursors
-Plug 'tommcdo/vim-exchange.git' " Use cx to exchange text over motions
+Plug 'tommcdo/vim-exchange' " Use cx to exchange text over motions
 Plug 'tpope/heroku-remote' " Helpers for working with Heroku
 Plug 'tpope/vim-abolish' " For performing replaces, fixing typos, and otherwise managing many variants of phrases
 Plug 'tpope/vim-characterize' " Enhances 'ga' to provide more useful information
@@ -84,11 +87,13 @@ Plug 'tpope/vim-surround' " Automates insertion of surrounding characters (IE, }
 Plug 'tpope/vim-tbone' " Basic integrations between tmux and Vim
 Plug 'tpope/vim-unimpaired' " Nice keybinds for toggling, enabling, navigating, etc. using [, ], and c.
 Plug 'tpope/vim-vinegar' " Manage file/directory navigation more easily while sticking with netrw.
-Plug 'tsukkee/unite-tag.git' " Search tagfiles via Unite
+Plug 'tsukkee/unite-tag' " Search tagfiles via Unite
 Plug 'vim-scripts/TaskList.vim' " Provides lists of tasks (TODO, FIXME, etc) related to the current buffer
 Plug 'vim-scripts/closetag.vim' " Reduces redudant typing in XML-like file types
 Plug 'voithos/vim-python-matchit' " Allows the % motion to work with Python keywords.
 Plug 'wellle/targets.vim' " Some smart generic text objects!
+Plug 'junegunn/fzf' " FZF fuzzy finder
+
 
 " Language bundles
 Plug 'Quramy/tsuquyomi'
@@ -105,7 +110,7 @@ Plug 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 Plug 'kchmck/vim-coffee-script'
 Plug 'leafgarland/typescript-vim'
 Plug 'lunaru/vim-less'
-Plug 'mintplant/vim-literate-coffeescript.git'
+Plug 'mctenshi/vim-literate-coffeescript'
 Plug 'monokrome/vim-testdrive'
 Plug 'mutewinter/nginx.vim'
 Plug 'othree/html5.vim'
@@ -117,6 +122,7 @@ Plug 'vim-scripts/JavaScript-Indent'
 Plug 'wavded/vim-stylus'
 Plug 'wting/rust.vim'
 
+
 Plug 'marijnh/tern_for_vim', {
     \ 'build' : {
     \     'windows' : 'npm install',
@@ -125,6 +131,7 @@ Plug 'marijnh/tern_for_vim', {
     \     'unix' : 'npm install',
     \    },
     \ }
+
 
 " Framework-specific bundles
 Plug 'jmcomets/vim-pony' " Wraps Django commands into Vim commands
