@@ -1,12 +1,15 @@
+# Temporary files
 /tmp/*/*
 !/tmp/undo/README.md
 !/tmp/backup/README.md
 !/tmp/swap/README.md
 
+# Dependencies managed by Plugged
+/plugged/*
+
+# Non-git hidden file patterns
 .*
 !.gitmodules
 !.gitignore
 !.gitslave
-
-bundle/*/
 
