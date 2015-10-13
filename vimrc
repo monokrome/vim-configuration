@@ -134,14 +134,7 @@ Plug 'vim-scripts/glsl.vim'
 Plug 'wavded/vim-stylus'
 Plug 'wting/rust.vim'
 
-Plug 'marijnh/tern_for_vim', {
-  \ 'build' : {
-  \     'windows' : 'npm install',
-  \     'cygwin' : 'npm install',
-  \     'mac' : 'npm install',
-  \     'unix' : 'npm install',
-  \    },
-  \ }
+Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 
 
 " Framework-specific bundles
