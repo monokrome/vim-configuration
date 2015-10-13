@@ -25,10 +25,6 @@ Plug 'rizzatti/funcoo.vim' " Adds 'object-oriented' constructs to VimL
 Plug 'vim-scripts/L9' " Helper library for VimL
 
 
-" Asyncronous processing to VimScript commands
-Plug 'Shougo/vimproc', { 'do': 'make' }
-
-
 " Colors
 Plug 'altercation/vim-colors-solarized' " Solarized color scheme
 Plug 'sjl/badwolf' " A nice, warm color scheme
