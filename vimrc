@@ -26,14 +26,7 @@ Plug 'vim-scripts/L9' " Helper library for VimL
 
 
 " Asyncronous processing to VimScript commands
-Plug 'Shougo/vimproc', {
-    \ 'build' : {
-    \     'windows' : 'make -f make_mingw32.mak',
-    \     'cygwin' : 'make -f make_cygwin.mak',
-    \     'mac' : 'make -f make_mac.mak',
-    \     'unix' : 'make -f make_unix.mak',
-    \    },
-    \ }
+Plug 'Shougo/vimproc', { 'do': 'make' }
 
 
 " Colors
@@ -46,7 +39,8 @@ Plug 'ajh17/Spacegray.vim' " Based on the XCode SpaceGray theme
 " Helper plugins
 Plug 'Lokaltog/vim-easymotion' " Allows quick motions to characters that are currently in vim
 Plug 'Raimondi/delimitMate' " Puts things after other things!
-Plug 'Shougo/neocomplete' " Completion support that isn't YouCompleteMe
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } " Completion that is YouCompleteMe 
+" Plug 'Shougo/neocomplete' " Completion support that isn't YouCompleteMe
 Plug 'Shougo/unite-outline' " A nested outline of the current buffer's tags
 Plug 'SirVer/ultisnips' " Much smarter TextMate-style snippet support
 Plug 'duff/vim-bufonly' " A command for removing all buffers except the active one
