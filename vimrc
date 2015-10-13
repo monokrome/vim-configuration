@@ -1,7 +1,15 @@
-" Disable Vi compatibility
-set nocompatible
+ " Note: Skip initialization for vim-tiny or vim-small.
+ if !1 | finish | endif  " Disable Vi compatibility
 
 
+" Initialize NeoBundle, and let it manage updating itself.
+if has('vim_starting')
+  set nocompatible
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+
+" Initialize Plug package management
 call plug#begin()
 
 
@@ -32,13 +40,17 @@ Plug 'Shougo/vimproc', {
 Plug 'altercation/vim-colors-solarized' " Solarized color scheme
 Plug 'sjl/badwolf' " A nice, warm color scheme
 Plug 'junegunn/seoul256.vim' " Add seoul256.vim color scheme
+Plug 'jeetsukumaran/vim-nefertiti' " Colorscheme formerly known as MochaLatte
+Plug 'ajh17/Spacegray.vim' " Based on the XCode SpaceGray theme
 
 " Helper plugins
 Plug 'Lokaltog/vim-easymotion' " Allows quick motions to characters that are currently in vim
+Plug 'Raimondi/delimitMate' " Puts things after other things!
 Plug 'Shougo/neocomplete' " Completion support that isn't YouCompleteMe
 Plug 'Shougo/unite-outline' " A nested outline of the current buffer's tags
 Plug 'SirVer/ultisnips' " Much smarter TextMate-style snippet support
 Plug 'duff/vim-bufonly' " A command for removing all buffers except the active one
+Plug 'editorconfig/editorconfig-vim' " Allows a common format for storing editor configuration conventions
 Plug 'ervandew/supertab' " Use tab for completions (This breaks stuff?)
 Plug 'gcmt/wildfire.vim' " Smart visual selection of nearest objects by pressing <Enter>
 Plug 'godlygeek/tabular' " Simplify horizontal alignment of text
@@ -46,15 +58,16 @@ Plug 'goldfeld/vim-seek' " A two-character context version of the 'f' and 'F' mo
 Plug 'gregsexton/MatchTag' " Highlights matching tags when the cursor is over one of them
 Plug 'guns/vim-sexp' " More nice text objects, operators, and motions!
 Plug 'honza/vim-snippets' " A decent library of standard snippets
+Plug 'https://github.com/rking/ag.vim' " Use silver searcher for :find-like searches with :Ag
 Plug 'itchyny/lightline.vim' " A lightweight alternative to PowerLIne for pretty statusbars
-Plug 'jeetsukumaran/vim-nefertiti' " Colorscheme formerly known as MochaLatte
 Plug 'johnsyweb/vim-makeshift' " 'intelligent' selection of makeprg
+Plug 'junegunn/fzf' " FZF fuzzy finder
 Plug 'kana/vim-exjumplist' " Plug mappings to jump between buffers in the jumplist
 Plug 'majutsushi/tagbar' " A tagbar pane for the current buffer
+Plug 'mattn/emmet-vim' " Add shortcuts for making HTML elements
 Plug 'mattn/gist-vim' " Allows simple posting to Gist from within Vim
 Plug 'mhinz/vim-signify' " Signs that describe your current SCM changeset
 Plug 'michaeljsmith/vim-indent-object' " An indentation (i) text object for indent-based languages
-Plug 'monokrome/openssl.vim' " Allows wrapping Vim's I/O around OpenSSL
 Plug 'monokrome/vim-flow' " Rhyme completion and syllable counting
 Plug 'nathanaelkane/vim-indent-guides' " Guide lines for indentation
 Plug 'neochrome/todo.vim' " A todo list for Vim.
@@ -75,6 +88,7 @@ Plug 'tpope/vim-eunuch' " File management from inside Vim
 Plug 'tpope/vim-fireplace' " Clojure REPL integration
 Plug 'tpope/vim-flatfoot' " Smarter mappings for the {f,F,t,T} motions using CTRL.
 Plug 'tpope/vim-fugitive' " Git integration
+Plug 'tpope/vim-haml' " Provides support for HAML and SASS
 Plug 'tpope/vim-jdaddy' " JSON text objects
 Plug 'tpope/vim-obsession' " Automatic session management via :Obsession
 Plug 'tpope/vim-projectile' " Scaffolding in Vim
@@ -90,16 +104,20 @@ Plug 'tpope/vim-vinegar' " Manage file/directory navigation more easily while st
 Plug 'tsukkee/unite-tag' " Search tagfiles via Unite
 Plug 'vim-scripts/TaskList.vim' " Provides lists of tasks (TODO, FIXME, etc) related to the current buffer
 Plug 'vim-scripts/closetag.vim' " Reduces redudant typing in XML-like file types
+Plug 'vim-scripts/openssl.vim' " Allows wrapping Vim's I/O around OpenSSL
 Plug 'voithos/vim-python-matchit' " Allows the % motion to work with Python keywords.
 Plug 'wellle/targets.vim' " Some smart generic text objects!
-Plug 'junegunn/fzf' " FZF fuzzy finder
 
 
 " Language bundles
+Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'Quramy/tsuquyomi'
+Plug 'afshinm/npm.vim'
+Plug 'chase/vim-ansible-yaml'
 Plug 'chrisbra/csv.vim'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'davidhalter/jedi-vim'
+Plug 'davidoc/taskpaper.vim'
 Plug 'digitaltoad/vim-jade'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'fatih/vim-go'
@@ -107,6 +125,7 @@ Plug 'guns/vim-clojure-static'
 Plug 'https://github.com/pangloss/vim-javascript'
 Plug 'ivalkeen/vim-simpledb' 
 Plug 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
+Plug 'justinmk/vim-sneak'
 Plug 'kchmck/vim-coffee-script'
 Plug 'leafgarland/typescript-vim'
 Plug 'lunaru/vim-less'
@@ -115,22 +134,24 @@ Plug 'monokrome/vim-testdrive'
 Plug 'mutewinter/nginx.vim'
 Plug 'othree/html5.vim'
 Plug 'plasticboy/vim-markdown'
+Plug 't9md/vim-chef'
 Plug 'tpope/vim-git'
+Plug 'tpope/vim-liquid'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/Better-CSS-Syntax-for-Vim'
 Plug 'vim-scripts/JavaScript-Indent'
+Plug 'vim-scripts/glsl.vim'
 Plug 'wavded/vim-stylus'
 Plug 'wting/rust.vim'
 
-
 Plug 'marijnh/tern_for_vim', {
-    \ 'build' : {
-    \     'windows' : 'npm install',
-    \     'cygwin' : 'npm install',
-    \     'mac' : 'npm install',
-    \     'unix' : 'npm install',
-    \    },
-    \ }
+  \ 'build' : {
+  \     'windows' : 'npm install',
+  \     'cygwin' : 'npm install',
+  \     'mac' : 'npm install',
+  \     'unix' : 'npm install',
+  \    },
+  \ }
 
 
 " Framework-specific bundles
@@ -140,4 +161,5 @@ Plug 'smerrill/vagrant-vim' " Automatically set `ruby` filetype on Vagrantfile
 Plug 'vim-scripts/django.vim' " Syntax highlighting for Django templates
 
 
+" Mark dependencies as having all been listed
 call plug#end()
